@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html>
+    <html dir="rtl">
       <head>
         {/* Browser Favicon */}
         <link rel="icon" href="/icons/favicon.png" />

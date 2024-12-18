@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header id="navbar">
       <h1>
-        <Link href="/">{APP_NAME}</Link>
+        <Link href="/">EasyDrive</Link>
       </h1>
       <nav>
         <Link href="/">Home</Link>
