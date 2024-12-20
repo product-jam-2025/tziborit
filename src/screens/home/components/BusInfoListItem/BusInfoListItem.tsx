@@ -8,7 +8,7 @@ const BusInfoListItem = () => {
         <div>
             <LineNumberCircle lineNumber={517}/>
             <div>
-                <BusTimeline/>
+                <BusTimeline time={20}/>
                 <BusCrowdedness crowdedness={50}/>
             </div>
         </div>
