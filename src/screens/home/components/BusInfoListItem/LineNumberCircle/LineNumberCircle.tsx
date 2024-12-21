@@ -11,7 +11,6 @@ const LineNumberCircle = (props: LineNumberCircleProps) => {
             <span>{lineNumber}</span>
         </div>
     );
-    // todo: itay was here
 }
 
 export default LineNumberCircle;
