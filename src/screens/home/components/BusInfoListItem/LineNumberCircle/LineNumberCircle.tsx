@@ -8,7 +8,7 @@ const LineNumberCircle = (props: LineNumberCircleProps) => {
     const { lineNumber } = props;
     return (
         <div className="line-number-circle">
-            <span>{lineNumber}</span>
+            <span className="line-number-font">{lineNumber}</span>
         </div>
     );
 }
