@@ -1,0 +1,71 @@
+/* Combined styles for BuslineRoute and BuslineRouteTimeline */
+
+.route {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.station-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.station-container-graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.station-info {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: auto;
+    white-space: nowrap;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.connection-line {
+    width: 4px;
+    height: 40px;
+    background-color: #d3d3d3;
+}
+
+.connection-line.active {
+    background-color: #4caf50;
+}
+
+.station {
+    width: 24px;
+    height: 24px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.station.active {
+    background-color: #4caf50;
+}
+
+.station.current {
+    border: 3px solid #4caf50;
+}
+
+.bus-icon {
+    font-size: 14px;
+    color: white;
+}
