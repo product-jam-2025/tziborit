@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 export default function NavbarButton() {
-  const [isAtTop, setIsAtTop] = useState(true); // State to track the circle's position
+  const [toMountScoupe, setToMountScoupe] = useState(true); // State to track the circle's position
 
   const handleCircleClick = () => {
-    setIsAtTop(!isAtTop); // Toggle the position
+    setToMountScoupe(!toMountScoupe); // Toggle the position
   };
 
   return (
@@ -13,13 +13,13 @@ export default function NavbarButton() {
       <div className="buttonOutline">
         <div className="container">
           <div
-            className={`black-circle ${isAtTop ? "top" : "bottom"}`}
+            className={`black-circle ${toMountScoupe ? "top" : "bottom"}`}
             onClick={handleCircleClick}
           ></div>
         </div>
       </div>
       <div className="navbarText">
-        <h1>{isAtTop ? "להר הצופים" : "מהר הצופים"}</h1>
+        <h1>{toMountScoupe ? "להר הצופים" : "לגבעת רם"}</h1>
       </div>
     </div>
   );
