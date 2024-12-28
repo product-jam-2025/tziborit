@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import './StationHeader.css';
+import {useRouter} from "next/navigation";
 
 type StationHeaderProps = {
     stationName: string;
@@ -9,8 +11,12 @@ type StationHeaderProps = {
 
 const StationHeader = (props: StationHeaderProps) => {
     const {stationName, stationNumber} = props;
+    const router = useRouter();
+    const handleClick = () => {
+        router.back();
+    }
     return (
-        <div className="station-header">
+        <div className="station-header" onClick={handleClick}>
             <div className="station-name">
                 <span>{stationName}</span>
             </div>
