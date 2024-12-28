@@ -1,0 +1,123 @@
+/* BusSchedule.css */
+
+.schedule-container {
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: right;
+    box-sizing: border-box;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .time-box {
+    text-align: center;
+  }
+  
+  .time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .label {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .bus-number {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .info {
+    margin-top: 16px;
+  }
+  
+  .info-line {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  .route {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .stop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .people {
+    background-color: red;
+  }
+  
+  .people-group {
+    background-color: orange;
+  }
+  
+  .stop .text {
+    font-size: 14px;
+  }
+  
+  .stop.bold {
+    font-weight: bold;
+  }
+  
+  .footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .bus-circle {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  
