@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div>{children}
             <FloatingPlusButton/>
         </div>
-        <Footer />
+        <Footer /> 
       </body>
     </html>
   );
