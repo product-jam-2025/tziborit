@@ -1,27 +1,24 @@
 "use client"
 import React, { useState } from 'react';
-import Reports from './Reports';
 import './FloatingPlusButton.css';
+import BasicModal from "@/src/components/general/ModalComponent";
 
 const FloatingPlusButton = () => {
 
-    const [showPopup, setShowPopup] = useState(false);
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
-    const togglePopup = () => {
-        setShowPopup(!showPopup);
-    };
     return (
         <>
-            <button className="floating-plus-button" onClick={togglePopup}>
+            <button className="floating-plus-button" onClick={handleOpen}>
                 +
             </button>
-            {showPopup && (
                 <div className="popup">
                     <div className="popup-inner">
-                        <Reports />  {/* Render the Reports component here */}
+                        <BasicModal open={open} onClose={handleClose} />
                     </div>
                 </div>
-            )}
         </>
     );
 }
