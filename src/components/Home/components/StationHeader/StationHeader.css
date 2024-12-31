@@ -19,6 +19,8 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.906px;
+    font-family: 'BusStopFont', sans-serif;
+
 }
 
 .station-number {
@@ -32,4 +34,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: 'BusStopFont', sans-serif;
+
 }
