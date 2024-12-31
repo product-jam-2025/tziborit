@@ -33,6 +33,7 @@
     white-space: nowrap;
     margin-top: auto;
     align-self: flex-end;
+    font-family: "TitleFont", sans-serif;
 }
 
 .connection-line {

@@ -2,6 +2,46 @@
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+@font-face {
+  font-family: 'BusStopFont';
+  src: url('../src/fonts/80-kb-Sharp.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For time arrival of bus */
+@font-face {
+  font-family: 'NumberFont';
+  src: url('../src/fonts/TheBasics-DisplayThin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For time arrival of bus and reports */
+@font-face {
+  font-family: 'BoldNunberFont';
+  src: url('../src/fonts/TheBasics-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For titles and bus stops */
+@font-face {
+  font-family: 'TitleFont';
+  src: url('../src/fonts/TheBasics-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For the current bus stop */
+@font-face {
+  font-family: 'CurrentStopFont';
+  src: url('../src/fonts/TheBasics-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
@@ -147,13 +187,13 @@ h4,
 h5,
 h6 {
   margin-top: 1rem;
-  font-family: var(--font-titles);
+  font-family: 'TitleFont', sans-serif;
   font-weight: 500;
   font-optical-sizing: auto;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h2 {

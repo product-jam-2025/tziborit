@@ -19,7 +19,7 @@ export default function NavbarButton() {
         </div>
       </div>
       <div className="navbarText">
-        <h1>{toMountScoupe ? "להר הצופים" : "לגבעת רם"}</h1>
+        <h1>{toMountScoupe ? "להר הצופים" : "מהר הצופים"}</h1>
       </div>
     </div>
   );
