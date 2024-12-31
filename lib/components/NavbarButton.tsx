@@ -10,11 +10,10 @@ export default function NavbarButton() {
 
   return (
     <div className="mainContainer">
-      <div className="buttonOutline">
+      <div className="buttonOutline" onClick={handleCircleClick}>
         <div className="container">
           <div
             className={`black-circle ${toMountScoupe ? "top" : "bottom"}`}
-            onClick={handleCircleClick}
           ></div>
         </div>
       </div>
