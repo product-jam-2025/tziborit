@@ -275,7 +275,3 @@ fieldset {
     filter: brightness(80%);
   }
 }
-
-#__next {
-  isolation: isolate;
-}

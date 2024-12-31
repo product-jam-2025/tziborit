@@ -4,26 +4,15 @@ import BuslineDetails from "@/src/components/Busline/components/BuslineDetails/B
 import BuslineRoute from "@/src/components/Busline/components/BuslineRoute/BuslineRoute";
 import BuslineAlt from "@/src/components/Busline/components/BuslineAlt/BuslineAlt";
 import "@/src/components/Busline/Busline.css";
-import {useEffect, useRef, useState} from "react";
 
 export default function BuslineScreen() {
-    const [lineNumber, setLineNumber] = useState<number>(517)
-
-    useEffect(() => {
-        const query = new URLSearchParams(window.location.search);
-        const lineNumberParam = query.get('lineNumber');
-        if (lineNumberParam) {
-            setLineNumber(Number(lineNumberParam));
-        }
-        console.log(lineNumber);
-    }, []);
   return (
     <main>
         <StationHeader stationName="יפו מרכז" stationNumber={753675} />
         <div className="schedule-container">
-          <BuslineDetails lineNumber={lineNumber}  />
+          <BuslineDetails lineNumber={517}  />
           <BuslineRoute currentStop={5} stops={[]}/>
-          <BuslineAlt curLineNumber={lineNumber}/>
+          <BuslineAlt/>
         </div>
     </main>
   );

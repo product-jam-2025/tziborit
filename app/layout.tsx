@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Navbar from "@/lib/components/Navbar";
 import Footer from "@/lib/components/Footer";
-import FloatingPlusButton from "@/src/components/general/FloatingPlusButton";
+import FloatingPlusButton from "@/src/components/FloatingPlusButton";
 
 export const metadata: Metadata = {
   title: "Digital Product Jam Starter Kit",
@@ -34,13 +34,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
-      <div id="__next">
         <Navbar />
         <div>{children}
             <FloatingPlusButton/>
         </div>
-        <Footer />
-      </div>
+        <Footer /> 
       </body>
     </html>
   );
