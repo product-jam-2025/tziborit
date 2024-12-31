@@ -16,10 +16,7 @@ interface BuslineRouteProps {
 // Main component
 export default function BuslineRoute(props: BuslineRouteProps) {
 
-  // const { currentStop, stops } = props;
-
-  const stops = hardcodedStops;
-  const currentStop = 2;
+  const { currentStop, stops } = props;
 
   return (
     <div className="route">

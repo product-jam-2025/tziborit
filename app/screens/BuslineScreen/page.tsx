@@ -5,6 +5,7 @@ import BuslineRoute from "@/src/components/Busline/components/BuslineRoute/Busli
 import BuslineAlt from "@/src/components/Busline/components/BuslineAlt/BuslineAlt";
 import "@/src/components/Busline/Busline.css";
 import {useEffect, useState} from "react";
+import { busLines } from "@/public/constants/constants";
 
 export default function BuslineScreen() {
     const [lineNumber, setLineNumber] = useState<number>(517)
@@ -20,7 +21,7 @@ export default function BuslineScreen() {
         <StationHeader stationName="יפו מרכז" stationNumber={753675} />
         <div className="schedule-container">
           <BuslineDetails lineNumber={lineNumber}/>
-          <BuslineRoute currentStop={5} stops={[]}/>
+          <BuslineRoute currentStop={Math.floor(Math.random() * 6) + 3} stops={busLines[lineNumber]}/>
           <BuslineAlt curLineNumber={lineNumber}/>
         </div>
     </main>
