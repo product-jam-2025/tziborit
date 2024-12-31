@@ -14,7 +14,7 @@ const BusInfoListItem = (props: BusInfoProps) => {
     const {lineNumber} = props
     const router = useRouter();
     const handleClick = () => {
-        router.push(`/screens/BuslineScreen?lineNumber=${lineNumber}`);
+        router.push('/screens/BuslineScreen');
     };
     return (
         <div className="list-item-container" onClick={handleClick}>
