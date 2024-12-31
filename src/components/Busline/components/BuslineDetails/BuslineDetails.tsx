@@ -29,7 +29,6 @@ export default function BuslineDetails(props: BuslineDetailsProps) {
             <div className="info">
                 <BuslineDetailsReports time="18:15" report="רחוב עזה נחסם בגלל הפגנה"/>
                 <BuslineDetailsReports time="18:15" report="רחוב עזה נחסם בגלל הפגנה ענקית"/>
-
             </div>
         </div>
     )

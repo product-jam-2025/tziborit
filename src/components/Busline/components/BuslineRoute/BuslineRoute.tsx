@@ -1,8 +1,9 @@
 import React from 'react';
 import './BuslineRoute.css';
+import {hardcodedStops} from "@/public/constants/constants";
 
 // Define the types for the props
-interface BusStopProps {
+export interface BusStopProps {
   name: string;
   status: string;
 }
@@ -11,17 +12,6 @@ interface BuslineRouteProps {
   currentStop: number;
   stops: BusStopProps[];
 }
-
-// Define the hardcoded stops
-const hardcodedStops: BusStopProps[] = [
-  { name: "דרך עזה / מטודלה", status: "people" },
-  { name: "דרך עזה / רד״ק", status: "people-group" },
-  { name: "המלך ג׳ורג׳ / קק״ל", status: "stop" },
-  { name: "המלך ג׳ורג׳ / בן יהודה", status: "stop" },
-  { name: "דרך עזה / ז׳בוטינסקי", status: "stop" },
-  { name: "יפו מרכז", status: "stop" },
-  { name: "הנביאים / שטרואס", status: "" }
-];
 
 // Main component
 export default function BuslineRoute(props: BuslineRouteProps) {
