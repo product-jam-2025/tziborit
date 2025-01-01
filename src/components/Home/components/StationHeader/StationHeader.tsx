@@ -13,7 +13,7 @@ const StationHeader = (props: StationHeaderProps) => {
     const {stationName, stationNumber} = props;
     const router = useRouter();
     const handleClick = () => {
-        router.back();
+        router.push('/');
     }
     return (
         <div className="station-header" onClick={handleClick}>
